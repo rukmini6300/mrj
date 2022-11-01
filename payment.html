@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/carts.css">
+    <script src="https://kit.fontawesome.com/2935f1ae99.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--header start here-->
+    <header class="pay_head">
+      <div class="container">
+        <div class="payment_head">
+          <div class="payment_logo">
+            <span>
+              <a href="#">
+              <img src="images/logo.png" alt="img">
+            </a>
+            </span>
+          </div>
+          <div class="payment_secure">
+            <span>
+              <i class="fa-solid fa-shield-halved"></i>
+            </span>
+            <p>100% SECURE</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--payment banner start here-->
+    <section>
+      <div class="container">
+        <div class="mj_payment_head">
+          <div class="mj_pay_left">
+            <div>
+              <ul class="list_payment_ban">
+                <li>
+                  <a href="#">VIEW BAG (2)</a>
+                </li>
+                <li>
+                  <a href="#">Checkout</a>
+                </li>
+              </ul>
+            </div>
+            <!--login ,shipping address start here-->
+            <div>
+              <ul class="payment_login" id="login">
+                <li class="lg_pages">
+                  <span>1 . LOGIN</span>
+                  <div class="change_data">
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    <b id="name"></b>
+                    <button type="submit" id="change">CHANGE</button>
+                  </div>
+                  <div class="mj_lg_email">
+                    <div class="mj_lg_head">
+                      <h3>ENTER EMAIL ADDRESS</h3>
+                      <div class="mj_login">
+                        <div class="mj_login_left">
+                          <form id="test">
+                            <div class="form_group_pay">
+                              <label>Email</label>
+                              <input type="email" id="get_mail" required>
+                            </div>
+                            <div class="form_group_pay">
+                              <label>Password</label>
+                              <input type="password" required>
+                            </div>
+                            <div class="form_group_pay">
+                              <button type="submit">LOGIN TO CONTINUE</button>
+                              <!-- <button type="submit">test</button> -->
+                            </div>
+                          </form>
+                          <div class="mj_reg">
+                            <ul class="mj_singup">
+                              <li>
+                                <span>NOT REGISTERED?</span>
+                                <b> SIGNUP</b>
+                              </li>
+                              <li>
+                                <p>FORGOT PASSWORD</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="mj_login_right">
+                          <div class="right_pay_text">
+                            <h5>NO ACCOUNT? NO PROBLEM.</h5>
+                            <p>Continue to checkout without an account.</p>
+                            <button class="ntf">CONTINUE WITH GUEST</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="address">
+                  <span>2 . SHIPPING ADDRESS</span>
+                  <div class="change_data">
+                    <span>
+                      <i class="fa-solid fa-check"></i>
+                    </span>
+                    <b id="name"></b>
+                    <button type="submit" id="change">CHANGE</button>
+                  </div>
+                  <div class="mj_address">
+                    <div class="mj_new_address">
+                      <p>There is no saved address</p>
+                      <button type="submit" id="new_btn">Add New Address</button>
+                    </div>
+                    <div class="from_controll_address" id="form_data_ship">
+                      <div class="form_head">
+                        <div class="form_group_add">
+                          <label>Address name</label>
+                          <input type="text" id="add_name1">
+                        </div>
+                        <div class="form_group_add">
+                          <label>Country</label>
+                          <input type="text" id="add_name2">
+                        </div>
+                        <div class="form_group_add">
+                          <label>Address Line 1</label>
+                          <input type="text" id="add_name3">
+                        </div>
+                        <div class="form_group_add">
+                          <label>Address Line 2</label>
+                          <input type="text" id="add_name4">
+                        </div>
+                        <div class="form_group_add">
+                          <label>Zip Code / Postal Code</label>
+                          <input type="text" id="add_name5">
+                        </div>
+                        <div class="form_group_add mj_select">
+                          <label>State</label>
+                          <select id="add_name6">
+                            <option>Taxes</option>
+                            <option>Taxes</option>
+                            <option>Taxes</option>
+                            <option>Taxes</option>
+                            <option>Taxes</option>
+                            <option>Taxes</option>
+                          </select>
+                        </div>
+                        <div class="form_group_phone">
+                          <label>Phone Number</label>
+                          <input type="text" id="add_name7">
+                        </div>
+                        <div class="mj_checkbox">
+                          <input type="checkbox" id="check">
+                          <label for="check">Email me about hot items, great savings, and more.</label>
+                        </div>
+                        <div class="mj_btns">
+                          <button type="submit" id="add_btn3">ADD ADDRESS</button>
+                          <button>CANCEL</button>
+                        </div>
+                      </div>
+                      <div class="form_note">
+                        <p>Please note: All SMS communication will be sent on your mobile number</p>
+                      </div>
+                    </div>
+                    <div class="deliver_data">
+                      <div class="radio_home">
+                        <input type="radio" id="huey" name="drone" value="huey">
+                        <label for="huey">HOME ADDRESS (ORDER WILL BE DELEVERED TO THIS ADDRESS)</label>
+                      </div>
+                      <div class="edit_btn_del">
+                        <button type="submit">EDIT BUTTON</button>
+                      </div>
+                      <ul class="ship_delivery_data">
+                        <li>
+                          <div>
+                            <span id="one"></span>
+                            <span id="two"></span>
+                            <span id="three"></span>
+                            <span id="four"></span>
+                            <span id="five"></span>
+                            <span id="six"></span>
+                            <span id="seven"></span>
+                          </div>
+                          <div class="delivert_btn">
+                            <button>Delivery Button</button>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="right_radio">
+                            <p>Select Payment Method</p>
+                            <p>
+                              <input type="radio" id="huey" name="drone" value="huey">
+                              <label for="huey">Standard $8.99 —— (Free @ $99 today)</label>
+                            </p>
+                            <p>
+                              <input type="radio" id="huey" name="drone" value="huey">
+                              <label for="huey">Standard $8.99 —— (Free @ $99 today)</label>
+                            </p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="payment">
+                  <span>3 . MAKE PAYMENT</span>
+                  <div>
+                    <ul class="radio_mj">
+                      <li>
+                        <div class="pay_radio">
+                          <label for="btn">
+                            <input type="radio" name="radio" id="btn"> Credit / Debit / ATM Card </label>
+                          <div class="credit">
+                            <div class="card_mj">
+                              <input type="text" placeholder="Enter Card Number">
+                            </div>
+                            <div class="mj_date">
+                              <span>Expiry</span>
+                              <select>
+                                <option>MM</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>01</option>
+                                <option>02</option>
+                              </select>
+                              <select>
+                                <option>YY</option>
+                                <option>1999</option>
+                                <option>1998</option>
+                                <option>1997</option>
+                                <option>1996</option>
+                                <option>1995</option>
+                                <option>1994</option>
+                                <option>1999</option>
+                                <option>1999</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="pay_radio">
+                          <label for="btn">
+                            <input type="radio" name="radio" id="btn"> PayPal [Express Checkout] </label>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="pay_radio">
+                          <label for="btn">
+                            <input type="radio" name="radio" id="btn"> Purchase Order </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--banner right start here-->
+          <div class="mj_pay_right">
+            <div class="cart_right_head">
+              <h1>Order Review</h1>
+              <button>Apply Coupon</button>
+            </div>
+            <div class="cart_right_text">
+              <p>
+                <span>Subtotal (2 item)</span>
+                <b>$20.00</b>
+              </p>
+              <p>
+                <span>Shipping</span>
+                <b>$6.92</b>
+              </p>
+              <p>
+                <span>Est. taxes & fees</span>
+                <b>$20.00</b>
+              </p>
+              <p>
+                <span>Est. total</span>
+                <b>$28.92</b>
+              </p>
+            </div>
+            <div class="cart_order_btn">
+              <button class="btn">PLACE ORDER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--sign up page-->
+    <div class="sign_head">
+      <div class="cart_head_sign">
+        <h3>SIGN UP <span>
+            <i class="fa-solid fa-xmark"></i>
+          </span>
+        </h3>
+        <p>Signup makes your shopping experience better.</p>
+        <div class="form_group_sign">
+          <input type="text" value="" placeholder="First Name">
+        </div>
+        <div class="form_group_sign">
+          <input type="text" value="" placeholder="Last Name">
+        </div>
+        <div class="form_group_sign">
+          <input type="number" value="" placeholder="Phone Number">
+        </div>
+        <div class="form_group_sign">
+          <input type="email" value="" placeholder="Email">
+        </div>
+        <div class="form_group_sign">
+          <input type="password" value="" placeholder="Password">
+        </div>
+        <div class="form_group_sign">
+          <input type="password" value="" placeholder="Confirm password">
+        </div>
+        <div class="sign_text">
+          <p>NOTE: Password is case sensitive</p>
+        </div>
+        <div class="signup_btn">
+          <button>SIGN UP</button>
+        </div>
+      </div>
+    </div>
+    <div class="signup_sides_part signup_sides_part_effects">
+      <!--footer start here-->
+      <footer>
+        <div class="container">
+          <div class="ft_head">
+            <ul class="mj_footer">
+              <li>
+                <b>Fasteners</b>
+                <ul>
+                  <li>
+                    <a href="#">Men</a>
+                  </li>
+                  <li>
+                    <a href="#">Women</a>
+                  </li>
+                  <li>
+                    <a href="#">Kids</a>
+                  </li>
+                  <li>
+                    <a href="#">Home&Living</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover</a>
+                  </li>
+                  <li>
+                    <a href="#">Home&Living</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>ONLINE SHOPPING</b>
+                <ul>
+                  <li>
+                    <a href="#">Men</a>
+                  </li>
+                  <li>
+                    <a href="#">Women</a>
+                  </li>
+                  <li>
+                    <a href="#">Kids</a>
+                  </li>
+                  <li>
+                    <a href="#">Home&Living</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover</a>
+                  </li>
+                  <li>
+                    <a href="#">Home&Living</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <b>OUR POLICIES</b>
+                <ul>
+                  <li>
+                    <a href="#">Men</a>
+                  </li>
+                  <li>
+                    <a href="#">Women</a>
+                  </li>
+                  <li>
+                    <a href="#">Kids</a>
+                  </li>
+                  <li>
+                    <a href="#">Home&Living</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover</a>
+                  </li>
+                  <li>
+                    <a href="#">Home&Living</a>
+                  </li>
+                  <li>
+                    <a href="#">Discover</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="ft_location">
+                <div>
+                  <b>SUBSCRIBE TO NEWSLETTERS</b>
+                  <div class="mj_sub">
+                    <input type="text">
+                    <button>SUBSCRIBE</button>
+                  </div>
+                  <div class="ft_text">
+                    <span>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    <div class="ft_mj_text">
+                      <p>633 Skokie Blvd</p>
+                      <p> Suite 490</p>
+                      <p>Clair Mel,FL 33619</p>
+                      <p>United States</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!--footer2 start here-->
+      <div class="footer_head">
+        <div class="container">
+          <div class="footer_main">
+            <div class="footer_text">
+              <p>&copy; <span class="ft2_text">Pre Retailer</span> 2019 Powered by Sellers Commerce </p>
+            </div>
+            <div class="ft_right_ico">
+              <ul>
+                <li>
+                  <span>
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <i class="fa-brands fa-twitter"></i>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <i class="fa-brands fa-youtube"></i>
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    <i class="fa-solid fa-camera"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          $(".ntf").on('click', function() {
+            $(".sign_head").toggleClass("active");
+          });
+        });
+        $(".close, .signup_sides_part, .signup_page").click(function() {
+          $(".signup_sides_part_effects").removeClass("active");
+          $(".signup_page_open").removeClass("active");
+        });
+      </script>
+      <!--login jquery -->
+      <script>
+        $('.payment_login >li >span').on('click', function() {
+          $(this).parent().addClass('bg_clr');
+          $(this).siblings().addClass('active')
+        })
+        $('#test').on('submit', function() {
+          let getname = $('#get_mail').val();
+          $('#name').text(getname);
+          $('.change_data').addClass('tick')
+          $('.address').removeClass('address');
+          $('.mj_lg_email').removeClass('active');
+          $('.lg_pages').removeClass('bg_clr').addClass('login_complete');
+          return false
+        })
+        $("#change").click(function() {
+          $('#name').text('');
+          $('.change_data').removeClass('tick')
+          $('.address').addClass('address');
+          $('.mj_lg_email').addClass('active');
+          $('.lg_pages').addClass('bg_clr').removeClass('login_complete');
+        });
+        $(".address").click(function() {
+          $(this).removeClass('not-allowed').addClass('bg_clr')
+          $('.mj_new_address').addClass('active')
+        });
+        // $("#new_btn").click(function(){
+        // $(".from_controll_address").addClass('active')
+        // // $('.mj_new_address').removeClass('mj_new_address')
+        // // $("#new_btn").remove()
+        // // $(".mj_new_address").remove()
+        // $(".add_new_form").addClass('active')
+        // })
+        $("#new_btn").on('click', function() {
+          $(".mj_new_address").addClass('hide');
+          $(".from_controll_address").addClass('active')
+
+
+        });
+          $('#add_btn3').on("click", function() {
+           
+            let firstname = $('#add_name1').val();
+            let firstname1 = $('#add_name2').val();
+            let firstname2 = $('#add_name3').val();
+            let firstname3 = $('#add_name4').val();
+            let firstname4 = $('#add_name5').val();
+            let firstname5 = $('#add_name7').val();
+            $('#one').text(firstname);
+            $('#two').text(firstname1 + " " + firstname2);
+            $('#three').text(firstname2);
+            $('#four').text(firstname3);
+            $('#five').text(firstname4);
+            $('#six').text(firstname5);
+            // $('#seven').text(firstname6);
+            $('#add8').removeClass('mj-visble');
+            $('#add9').addClass('mj-visble');
+            $(".from_controll_address").removeClass('active')
+            $('.deliver_data').addClass('open')
+          });
+          // $('.add_new').removeClass('add_new');
+          // $("#add_new_btn").remove();
+     
+      </script>
+      <script>
+        $("#add_btn3").click(function() {
+          $(".deliver_data").addClass("active")
+        })
+
+        $('.edit_btn_del >button').click(function(){                         
+        $('#form_data_ship').addClass('mj-visble');                         
+        $('.deliver_data').removeClass('mj-visble');                          
+                                                                              
+      });
+      </script>
+      </script>
+  </body>
+</html>
